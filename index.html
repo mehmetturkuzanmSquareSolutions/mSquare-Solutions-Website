@@ -72,10 +72,23 @@
   <section id="contact" class="section">
     <div class="container">
       <h2>Contact Us</h2>
-      <form id="contactForm">
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea placeholder="Your Message" rows="5" required></textarea>
+      <form
+        action="https://formsubmit.co/mehmetalbayrakcareer@gmail.com"
+        method="POST"
+      >
+        <!-- Disable captcha -->
+        <input type="hidden" name="_captcha" value="false">
+      
+        <!-- Email subject -->
+        <input type="hidden" name="_subject" value="New Contact Form Submission - mSquare Solutions">
+      
+        <!-- Redirect after submit -->
+        <input type="hidden" name="_next" value="https://msquaresolutions.com/thank-you.html">
+      
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      
         <button type="submit" class="btn">Send Message</button>
       </form>
       <p class="note">* This form is static and logs submissions to the browser console.</p>
