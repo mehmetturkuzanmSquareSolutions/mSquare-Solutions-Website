@@ -137,6 +137,12 @@ form textarea {
   color: #666;
 }
 
+.logo img {
+  height: 40px; 
+  width: auto;
+  display: block;
+}
+
 /* Footer */
 .footer {
   background: var(--primary);
